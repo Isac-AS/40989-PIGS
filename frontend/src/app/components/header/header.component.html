@@ -1,0 +1,22 @@
+<header>
+  <mat-toolbar color="primary" id="header-toolbar">
+    <span id="header-title">La TERCERA</span>
+    <div id="header-button-container">
+      <a mat-raised-button color="accent" routerLink="/login" *ngIf="!loggedInCondition">
+        <mat-icon>login</mat-icon>
+        Iniciar sesión
+      </a>
+      <a mat-raised-button color="accent" routerLink="/register" *ngIf="!loggedInCondition">
+        <mat-icon>person_add</mat-icon>
+        Registrarse
+      </a>
+      <a mat-raised-button color="disabled" *ngIf="loggedInCondition">
+        <!--{{currentUserName}}-->Fulanito
+      </a>
+      <button mat-raised-button color="accent" (click)="logOut()" *ngIf="loggedInCondition">
+        <mat-icon>logout</mat-icon>
+        Cerrar sesión
+      </button>
+    </div>
+  </mat-toolbar>
+</header>

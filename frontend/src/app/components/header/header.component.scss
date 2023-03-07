@@ -1,0 +1,22 @@
+#header-toolbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  #header-title {
+    font-size: 1.8em;
+    font-weight: bolder;
+  }
+  
+  #header-button-container a {
+    margin: 0.5em;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+  
+  #header-button-container button {
+    margin: 0.5em;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
